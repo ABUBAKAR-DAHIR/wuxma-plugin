@@ -1,32 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
+import Home from './Home'
 
-function App() {
-  const [count, setCount] = useState(5)
-
-  const handleChange = (event: Event) => {
-    const target = event.target as HTMLInputElement
-    setCount(parseInt(target.value))
-  }
-
-  const handleCreate = () => {
-    // parent.postMessage({pluginMessage: {type: 'create-rectangles', count}}, '*')
-      parent.postMessage({ pluginMessage: { type: 'create-shapes', count } }, '*')
-  }
-
-  const handleCancel = () => {
-    // parent.postMessage({pluginMessage: {type: 'cancel', count}}, '*')
-      parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
-  }
-
-
+export default function App() {
   return (
-    <>
-      <h2>Rectangle Creator</h2>
-      <p>Count: <input id="count" type="number" value={count} onChange={() => handleChange} /></p>
-      <button id="create" onClick={handleCreate}>Create</button>
-      <button id="cancel" onClick={handleCancel}>Cancel</button>
-    </>
+    <main className='min-h-130'>
+      <Home />
+    </main>
   )
 }
-
-export default App
