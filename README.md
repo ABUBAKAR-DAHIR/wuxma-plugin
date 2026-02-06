@@ -1,6 +1,7 @@
 # Wuxma – Figma AI Plugin (Developer Documentation)
 
----
+<br/>
+<br/>
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="public/wuxma_dark_mode.svg">
@@ -9,7 +10,8 @@
   </picture>
 </p>
 
----
+<br/>
+<br/>
 
 Wuxma is a **production-grade Figma plugin** that integrates with a **Next.js web application** to generate editable Figma UI designs from natural language prompts using AI.
 
