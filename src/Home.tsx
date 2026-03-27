@@ -41,6 +41,7 @@ export default function Home() {
 
       if(msg.finished){
         setLoading(false)
+        setPrompt("")
       }
     }
 
